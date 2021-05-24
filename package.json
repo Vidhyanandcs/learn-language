@@ -1,0 +1,16 @@
+{
+  "name": "speech-recognition",
+  "version": "1.0.0",
+  "description": "Speech Recognition",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon -e * src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}

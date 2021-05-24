@@ -1,0 +1,87 @@
+body{
+    background-color:blanchedAlmond;
+}
+
+
+/* Grid System */
+/* Columns divided into 3 equal fraction with 4 column lines & Rows divided into 3 fractions with 4 row lines */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+	grid-template-rows: 1fr 1fr 1fr;   
+}
+
+.recording-header{
+	grid-column: 1/13;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.recording-controls{
+	grid-column: 1/13;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 20px;
+}
+
+
+.recording-result{
+	grid-column: 1/13;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Other inner features */
+
+.container > * {
+    margin: 8px;
+}
+
+.click-button {
+    width: 150px;
+	height: 50px;
+	cursor: pointer;
+}
+
+/* Recording Pulse Button */
+.rec-button {
+	width: 35px;
+	height: 35px;
+	font-size: 0;
+	background-color: red;
+	border: 0;
+	border-radius: 35px;
+	margin: 18px;
+	outline: none;
+}
+.notRec{
+	background-color: darkred;
+}
+
+.rec{
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes pulse{
+	0%{
+		box-shadow: 0px 0px 5px 0px rgba(173,0,0,.3);
+	}
+	65%{
+		box-shadow: 0px 0px 5px 13px rgba(173,0,0,.3);
+	}
+	90%{
+		box-shadow: 0px 0px 5px 13px rgba(173,0,0,0);
+	}
+}
+
+/* Text Box */
+.record-textbox{
+	font-size: 16px;
+	background-color: rgb(243, 240, 240);
+}

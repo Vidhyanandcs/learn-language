@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="recording-header">
+            <h1>Speech to Text: Hindi</h1>
+            <h4 id="instruction"><i>Click "Record" button and speak out: मेरा एक अच्छा समय चल रहा है!</i></h4>
+        </div>
+        <div class="recording-controls">
+            <button class="click-button" id="start">Record</button>
+            <button class="click-button" id="stop">Stop Recording</button>
+            <button class="rec-button notRec" id="blink">Not Recording</button>
+        </div>
+        <div class="recording-result">
+            <textarea name="comment" cols="80" rows="7" class="record-textbox" id="speechText"></textarea>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

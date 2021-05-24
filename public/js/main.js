@@ -8,12 +8,12 @@ let instructiont = document.getElementById("instruction");
 // other variables
 let content = ""  //content the user is going to speak out
 
-//Initiating speech recognition for chrome and firefox
+//Initiating speech recognition for chrome 
 // Speechrecognition interface
-window.Speechrecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+const SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
 
 //New instance of speech recognition
-const recognition = new window.Speechrecognition();
+const recognition = new SpeechRecognition;
 recognition.lang = 'hi';
 recognition.continuous = true;
 recognition.onstart = function(){

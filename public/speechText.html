@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="recording-header">
+            <div class="header-text">
+                <h1 style="text-align: center;">Speech to Text: Hindi</h1>
+                <p class="speakout">Listen to the audio. Click the "Record" button and speak out what you have heard:</p>
+                 
+                <audio controls class="audiorecord">
+                    <source src="./assets/audio/goodtime.mp4" type="audio/mp4">
+                </audio><br>
+                <p class="speakout" id="textReference">मेरा अच्छा समय चल रहा है</p>   
+                <h5 style="text-align: center;"  id="instruction"></h5>
+            </div>
+            <div id="update">
+
+            </div>
+        </div>
+        <div class="recording-controls">
+            <button class="click-button" style="margin-right: 2%;" id="start">Record</button>
+            <button class="click-button" id="analyse">Analyse</button>
+        </div>
+        <div class="recording-result">
+            <textarea name="comment" class="record-textbox" id="speechText"></textarea>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

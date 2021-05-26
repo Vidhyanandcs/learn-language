@@ -1,27 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
 body{
     background-color:blanchedAlmond;
+	font-family: 'Roboto', sans-serif;
 }
 
 
 /* Grid System */
-/* Columns divided into 3 equal fraction with 4 column lines & Rows divided into 3 fractions with 4 row lines */
 .container {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-	grid-template-rows: 1fr 1fr 1fr;   
+	grid-template-rows: repeat(12,1fr);   
 }
 
+/* Welcome Page */
+.welcome{
+	grid-column: 1/13;
+	grid-row: 1/13;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.welcomeImage{
+	width: 20%;
+	border-radius: 50%;
+	background-color: #00ead3;
+	padding: 1% 0;
+}
+
+
+.arrow{
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Arial Unicode MS";
+	font-size: 40px;
+	cursor: pointer;
+	padding-top: 8%;
+}
+
+.arrow-anchor{
+	text-decoration: none;
+}
+
+.arrow-anchor:hover, .arrow-anchor:focus, .arrow-anchor:active{
+	color: #00ead3;
+}
+
+/* Speech to text page */
 .recording-header{
 	grid-column: 1/13;
+	grid-row: 1/4;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
+.header-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .recording-controls{
 	grid-column: 1/13;
+	grid-row: 4/5;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	padding-left: 20px;
 }
@@ -29,9 +74,10 @@ body{
 
 .recording-result{
 	grid-column: 1/13;
+	grid-row: 5/8;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 
 /* Other inner features */
@@ -40,11 +86,21 @@ body{
     margin: 8px;
 }
 
+.speakout{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
 .click-button {
     width: 150px;
 	height: 50px;
 	cursor: pointer;
 }
+
+/* .click-button:hover , .click-button:active , .click-button:focus{
+	
+} */
 
 /* Recording Pulse Button */
 .rec-button {
@@ -57,31 +113,53 @@ body{
 	margin: 18px;
 	outline: none;
 }
-.notRec{
-	background-color: darkred;
-}
 
-.rec{
-	animation-name: pulse;
-	animation-duration: 1.5s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-}
-
-@keyframes pulse{
-	0%{
-		box-shadow: 0px 0px 5px 0px rgba(173,0,0,.3);
-	}
-	65%{
-		box-shadow: 0px 0px 5px 13px rgba(173,0,0,.3);
-	}
-	90%{
-		box-shadow: 0px 0px 5px 13px rgba(173,0,0,0);
-	}
+.audiorecord{
+	color: #005f99;
+	font-weight: bold;
 }
 
 /* Text Box */
 .record-textbox{
 	font-size: 16px;
 	background-color: rgb(243, 240, 240);
+	width: 75%;
+	height: 25%;
+}
+
+#update{
+	color: #695cc6;
+}
+
+@media screen and (max-width: 800px) {
+	body{
+		overflow-x: hidden;
+	}
+	.record-textbox{
+		width: 75%;
+		height: 30%;
+	}
+
+	.welcome{
+		grid-column: 1/13;
+		grid-row: 1/5;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-top: 50%;
+	}
+
+	.welcomeImage{
+		width: 30%;
+		border-radius: 50%;
+		background-color: #00ead3;
+	}
+
+	.arrow{
+		font-weight: bold;
+		font-family: "Lucida Sans Unicode", "Arial Unicode MS";
+		font-size: 40px;
+		cursor: pointer;
+	}
 }

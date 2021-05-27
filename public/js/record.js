@@ -59,7 +59,7 @@ if (navigator.mediaDevices.getUserMedia) {
 
       clipContainer.classList.add('clip');
       audio.setAttribute('controls', '');
-      deleteButton.textContent = 'Delete';
+      deleteButton.innerHTML = '&#10006';
       deleteButton.className = 'delete';
 
       if(clipName === null) {
@@ -69,7 +69,6 @@ if (navigator.mediaDevices.getUserMedia) {
       }
 
       clipContainer.appendChild(audio);
-      clipContainer.appendChild(clipLabel);
       clipContainer.appendChild(deleteButton);
       soundClips.appendChild(clipContainer);
 

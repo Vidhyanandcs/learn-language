@@ -124,26 +124,54 @@ body{
 }
 
 .recording-controls{
-	grid-column: 1/13;
-	grid-row: 4/5;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-
-.recording-result{
-	grid-column: 1/13;
-	grid-row: 5/8;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 }
 
+
+.recording-result{
+	margin-top: 20px;
+}
+
 /*Recording*/
+.recording-header-ls{
+	grid-column: 1/13;
+	grid-row: 2/5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
 canvas {
 	display: block;
 	margin-bottom: 0.5rem;
+}
+
+.sound-clips {
+	grid-column: 1/13;
+	grid-row: 5/12;	
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.clip{
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.clip> .delete{
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+	border-radius: 50%;
+	justify-content: center;
+    align-items: flex-end;
+	border: none;
+	background-color: orangered;
 }
 
 /* Other inner features */
@@ -177,14 +205,15 @@ canvas {
 .audiorecord{
 	color: #005f99;
 	font-weight: bold;
+
 }
 
 /* Text Box */
 .record-textbox{
 	font-size: 16px;
 	background-color: rgb(243, 240, 240);
-	width: 75%;
-	height: 25%;
+	width: 200px;
+	height: 100px;
 }
 
 #update{
@@ -194,10 +223,6 @@ canvas {
 @media screen and (max-width: 800px) {
 	body{
 		overflow-x: hidden;
-	}
-	.record-textbox{
-		width: 75%;
-		height: 30%;
 	}
 
 	.welcome{
@@ -258,8 +283,4 @@ canvas {
 		padding-bottom: 3%;
 	}
 
-	.sound-clips {
-		flex: 1;
-		overflow: auto;
-	}
 }

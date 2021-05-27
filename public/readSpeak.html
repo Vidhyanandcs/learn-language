@@ -13,26 +13,29 @@
     <div class="container">
         <div class="recording-nav">
             <p class="double-arrow-design"><a class="arrow-anchor" href="speechText.html">&#8592;</a></p>
+            <h1 style="text-align: center; padding-top: 30px; color: #005f99;">Read & Speak</h1>
             <p class="double-arrow-design"><a class="arrow-anchor" href="writing.html">&#8594;</a></p>
         </div>
         <div class="recording-header-rs">
-            <h1 style="text-align: center; color: #005f99;">Read & Speak</h1>
-            <p class="speakout">Press record button and read out the text aloud. Listen to the recorded audio to check.</p>
+            <audio controls class="audiorecord" style="padding-bottom: 20px;">
+                <source src="./assets/audio/readSpeak.mp3" type="audio/mp4">
+            </audio>
+            <p class="speakout">Press record button and read out the sentance aloud. Listen to the recorded audio to check if you are correct.</p>
             <h3 class="speakout" id="textReference">मेरा अच्छा समय चल रहा है</h3>           
             <canvas class="visualizer" height="60px"></canvas>
             <div class="recording-controls-ls">
                 <button class="click-button" style="margin-right: 2%;" id="record">Record</button>
                 <button class="click-button" id="stop">Stop</button>
             </div>
-        </div>
-        <div class="record-visualizer">
+            <div class="record-visualizer">
            
-        </div>
-        <section class="sound-clips">
-        <h4>Recorded Audio</h4>
-
-
-        </section>
+            </div>
+            <section class="sound-clips">
+            <h4>Recorded Audio</h4>
+    
+    
+            </section>
+        </div>      
     </div>
 
     <script src="js/record.js"></script>

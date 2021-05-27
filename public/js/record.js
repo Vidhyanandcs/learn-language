@@ -50,7 +50,7 @@ if (navigator.mediaDevices.getUserMedia) {
     mediaRecorder.onstop = function(e) {
       console.log("data available after MediaRecorder.stop() called.");
 
-      const clipName = prompt('Enter a name for your sound clip?','My unnamed clip');
+      const clipName = "recordName"
 
       const clipContainer = document.createElement('article');
       const clipLabel = document.createElement('p');
@@ -86,7 +86,7 @@ if (navigator.mediaDevices.getUserMedia) {
 
       clipLabel.onclick = function() {
         const existingName = clipLabel.textContent;
-        const newClipName = prompt('Enter a new name for your sound clip?');
+        const newClipName = 'recordName';
         if(newClipName === null) {
           clipLabel.textContent = existingName;
         } else {

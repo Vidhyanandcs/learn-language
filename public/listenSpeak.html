@@ -13,11 +13,14 @@
     <div class="container">
         <div class="recording-nav">
             <p class="double-arrow-design"><a class="arrow-anchor" href="selectLanguage.html">&#8592;</a></p>
+            <h1 style="text-align: center; padding-top: 30px; color: #005f99;">Listen & Speak</h1>
             <p class="double-arrow-design"><a class="arrow-anchor" href="listenListen.html">&#8594;</a></p>
         </div>
         <div class="recording-header">
-            <h1 style="text-align: center; color: #005f99;">Listen & Speak</h1>
-            <p class="speakout">Play audio,record your voice,listen to your voice.Compare the two audio to check on your own.</p>
+            <audio controls class="audiorecord" style="padding-bottom: 20px;">
+                <source src="./assets/audio/listenSpeak.mp3" type="audio/mp4">
+            </audio>
+            <p class="speakout">Play audio, record your voice, listen to your voice.Compare the two audio to check if you are correct.</p>
                  
             <audio controls class="audiorecord" style="padding-bottom: 20px;">
                 <source src="./assets/audio/goodtime.mp4" type="audio/mp4">
@@ -27,12 +30,12 @@
                 <button class="click-button" style="margin-right: 2%;" id="record">Record</button>
                 <button class="click-button" id="stop">Stop</button>
             </div>
-        </div>
-        <div class="record-visualizer">
+            <div class="record-visualizer">
            
+            </div>
+            <section class="sound-clips">
+            <h4>Recorded Audio</h4>
         </div>
-        <section class="sound-clips">
-        <h4>Recorded Audio</h4>
 
 
         </section>

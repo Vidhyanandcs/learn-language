@@ -66,6 +66,7 @@ body{
 
 .language3{
 	grid-column: 1/13;
+	grid-row: 5/8;
 	justify-self: center;
 	align-self: center;
 }

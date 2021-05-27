@@ -10,6 +10,7 @@ let speakout = document.getElementById("speakout");
 let textReference = document.getElementById("textReference");
 let updateAnalysis = document.getElementById("update")
 
+
 // other variables
 let content = "";  //content the user is going to speak out
 
@@ -25,7 +26,6 @@ recognition.continuous = false;
 //event on starting recording
 recognition.onstart = function(){
 	instruction.innerHTML = "Recording Under progress...";
-	recordBlink.classList.add('rec')
 }
 
 //event on error recording
@@ -36,7 +36,6 @@ recognition.onerror = function(){
 //event on ending of recording
 recognition.onend = function(){
 	instruction.innerHTML = "";
-	recordBlink.classList.remove('rec')
 }
 
 //Processing the result
@@ -88,3 +87,4 @@ analyse.addEventListener("click", function(){
 })
 
 // Speech to text module ends here
+

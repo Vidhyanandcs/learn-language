@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen & Speak Module</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="recording-nav">
+            <p class="double-arrow-design"><a class="arrow-anchor" href="selectLanguage.html">&#8592;</a></p>
+            <p class="double-arrow-design"><a class="arrow-anchor" href="speechText.html">&#8594;</a></p>
+        </div>
+        <div class="recording-header">
+                <h1 style="text-align: center; color: #005f99;">Listen & Speak</h1>
+                <p class="speakout">Play audio.Record your voice.Listen to your voice.Compare the two audio to check on your own.</p>
+                 
+                <audio controls class="audiorecord" style="padding-bottom: 20px;">
+                    <source src="./assets/audio/goodtime.mp4" type="audio/mp4">
+                </audio>
+                <canvas class="visualizer" height="60px"></canvas>
+                <div class="recording-controls-ls">
+                    <button class="click-button" style="margin-right: 2%;" id="record">Record</button>
+                    <button class="click-button" id="stop">Stop</button>
+                </div>
+        </div>
+        <div class="record-visualizer">
+           
+        </div>
+        <section class="sound-clips">
+
+
+        </section>
+    </div>
+
+    <script src="js/record.js"></script>
+</body>
+</html>

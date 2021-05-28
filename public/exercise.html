@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="recording-nav">
+            <p class="double-arrow-design"><a class="arrow-anchor" href="listenWrite.html">&#8592;</a></p>
+            <h1 style="text-align: center; padding-top: 30px; color: #005f99;">Exercise</h1>
+            <p class="double-arrow-design"><a class="arrow-anchor" href="selectLanguage.html">&#8594;</a></p>
+        </div>
+        <div class="recording-header">  
+                <audio controls class="audiorecord" style="padding-bottom: 20px;">
+                    <source src="./assets/audio/exercise.mp3" type="audio/mp4">
+                </audio>
+                <p class="speakout">Listen to the audio and select the correct word from the choices below.</p>  
+                <audio controls class="audiorecord" style="padding-bottom: 20px;">
+                    <source src="./assets/audio/bharath.mp3" type="audio/mp4">
+                </audio>
+                <div class="multiple-choice">
+                    <input type="radio" id="choice1" name="choice1" value="शरत"><label for="choice1">शरत</label><br>
+                    <input type="radio" id="choice2" name="choice1" value="बरत"><label for="choice2">बरत</label><br>
+                    <input type="radio" id="answer" name="choice1" value="भारत"><label id="answer1" for="choice3">भारत</label><br>
+                    <input type="radio" id="choice4" name="choice1" value="इनमे से कोई नहीं"><label for="choice4">इनमे से कोई नहीं</label>  
+                </div>
+                <div class="recording-controls-ls">
+                    <button class="click-button" style="margin-right: 2%;" id="showAnswer">Reveal Answer</button>
+                </div>
+        </div>
+    </div>
+
+    <script src="js/listen.js"></script>
+</body>
+</html>

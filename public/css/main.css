@@ -230,6 +230,13 @@ canvas {
 	color: #695cc6;
 }
 
+.multiple-choice{
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+}
+
 @media screen and (max-width: 800px) {
 	body{
 		overflow-x: hidden;

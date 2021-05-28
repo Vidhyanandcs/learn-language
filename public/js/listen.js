@@ -1,7 +1,11 @@
 let matching = document.getElementById('matching')
 let notmatching = document.getElementById('not-matching')
 let showAnswer = document.getElementById('showAnswer')
-let answer = document.getElementById('answer1')
+let answerPrompt =document.getElementById('answer-prompt')
+let chocie1 = document.getElementById('choice1')
+let chocie2 = document.getElementById('choice2')
+let answer = document.getElementById('answer')
+let chocie4 = document.getElementById('choice4')
 
 //Listen Listen
 if(matching){
@@ -21,7 +25,16 @@ if(notmatching){
 
 if(showAnswer){
 	showAnswer.addEventListener("click", function(){
-		answer.style.backgroundColor = "#4aa96c"
-		answer.style.color = "#ffffff"
+		if(chocie1.checked){
+			answerPrompt.innerHTML = "Your answer is not correct. Please try again."
+		}else if(chocie2.checked){
+			answerPrompt.innerHTML = "Your answer is not correct. Please try again."
+		}else if(answer.checked){
+			answerPrompt.innerHTML = "Your answer is correct."
+		}else if(chocie4.checked){
+			answerPrompt.innerHTML = "Your answer is not correct. Please try again."
+		}else{
+			answerPrompt.innerHTML = "Please select one option."
+		}
 	})
 }

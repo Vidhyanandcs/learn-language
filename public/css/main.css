@@ -113,6 +113,12 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+.recording-controls-ex{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
 /* Speech to text page */
 .recording-header{
